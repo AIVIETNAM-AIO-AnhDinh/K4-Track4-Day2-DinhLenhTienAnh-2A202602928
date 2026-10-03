@@ -1,6 +1,7 @@
 # Lab Day 2 — DeepWeeds · Đinh Lệnh Tiến Anh (2A202602928)
 
-> Đang làm. Đã xong: Bước 0 (EDA, kiểm tra chia dữ liệu, kiểm tra pipeline). Các mục còn trống (`…`) sẽ điền sau khi chạy.
+> Notebook chạy toàn bộ Bước 0–5 trên Kaggle (T4 x2, ~2–3 giờ). Kết quả: `results.xlsx`, `report_draft.md`, `figures/`,
+> `curves/`, `predictions/`, `eval_out/` trong tab Output. Các mục còn trống (`…`) điền sau khi chạy.
 
 ## Notebook chạy lại
 
