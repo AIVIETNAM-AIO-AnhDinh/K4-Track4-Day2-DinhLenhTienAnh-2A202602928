@@ -1,0 +1,10 @@
+class,train,val,test,total,paper,Δ vs paper
+Chinee Apple,675,225,226,1126,1125,1
+Lantana,637,213,213,1063,1064,-1
+Parkinsonia,618,206,207,1031,1031,0
+Parthenium,613,204,205,1022,1022,0
+Prickly Acacia,637,212,213,1062,1062,0
+Rubber Vine,605,202,202,1009,1009,0
+Siam Weed,644,215,215,1074,1074,0
+Snake Weed,609,203,204,1016,1016,0
+Negatives,5463,1821,1822,9106,9106,0

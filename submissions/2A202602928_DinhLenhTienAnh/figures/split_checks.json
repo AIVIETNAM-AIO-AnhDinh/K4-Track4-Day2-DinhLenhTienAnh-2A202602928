@@ -1,0 +1,28 @@
+{
+  "n": {
+    "train": 10501,
+    "val": 3501,
+    "test": 3507,
+    "total": 17509
+  },
+  "ratio": {
+    "train": 0.5997,
+    "val": 0.2,
+    "test": 0.2003
+  },
+  "overlap": {
+    "train∩val": 0,
+    "train∩test": 0,
+    "val∩test": 0
+  },
+  "union": 17509,
+  "missing_files": 0,
+  "label_mismatch": [
+    {
+      "Filename": "20170714-110407-3.jpg",
+      "Label": 0,
+      "split": "train",
+      "Label_labels_csv": 1
+    }
+  ]
+}

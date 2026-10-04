@@ -1,0 +1,225 @@
+[{"stream_name":"stderr","time":7.210413635,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.210454941,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.210458952,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.210461428,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":7.819262009,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.819298853,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.8193036540000005,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.819307045,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":13.592199128,"data":"Note: you may need to restart the kernel to use updated packages.\n"}
+,{"stream_name":"stdout","time":32.172633733,"data":"{\n"}
+,{"stream_name":"stdout","time":32.172659981,"data":"  \"platform\": \"kaggle\",\n"}
+,{"stream_name":"stdout","time":32.172664564,"data":"  \"python\": \"3.13.15\",\n"}
+,{"stream_name":"stdout","time":32.172668888,"data":"  \"torch\": \"2.11.0+cu128\",\n"}
+,{"stream_name":"stdout","time":32.172672951,"data":"  \"torchvision\": \"0.26.0+cu128\",\n"}
+,{"stream_name":"stdout","time":32.172676995,"data":"  \"timm\": \"1.0.29\",\n"}
+,{"stream_name":"stdout","time":32.172680785,"data":"  \"numpy\": \"2.1.3\",\n"}
+,{"stream_name":"stdout","time":32.17268453,"data":"  \"pandas\": \"2.3.3\",\n"}
+,{"stream_name":"stdout","time":32.17268853,"data":"  \"cuda\": \"12.8\",\n"}
+,{"stream_name":"stdout","time":32.172692348,"data":"  \"gpu\": \"Tesla T4\",\n"}
+,{"stream_name":"stdout","time":32.172696333,"data":"  \"cpu_count\": 4,\n"}
+,{"stream_name":"stdout","time":32.172700391,"data":"  \"git_commit\": \"ead0f1c\"\n"}
+,{"stream_name":"stdout","time":32.172704298,"data":"}\n"}
+,{"stream_name":"stdout","time":32.172707762,"data":"REPO_DIR = /kaggle/temp/repo | OUT_DIR = /kaggle/working | DATA_DIR = /kaggle/temp/data\n"}
+,{"stream_name":"stdout","time":32.372837395,"data":"Đang tải images.zip (~490 MB) từ Zenodo ...\n"}
+,{"stream_name":"stdout","time":121.998588103,"data":"IMAGES_DIR = /kaggle/temp/data/images | 17509 ảnh .jpg\n"}
+,{"stream_name":"stdout","time":121.998630939,"data":"LABELS_DIR = /kaggle/temp/data/labels | ['labels.csv', 'test_subset0.csv', 'train_subset0.csv', 'val_subset0.csv']\n"}
+,{"stream_name":"stdout","time":122.238103527,"data":"Số ảnh: {'train': 10501, 'val': 3501, 'test': 3507, 'total': 17509} | tỉ lệ: {'train': '59.97%', 'val': '20.00%', 'test': '20.03%'}\n"}
+,{"stream_name":"stdout","time":122.238145477,"data":"Giao từng cặp: {'train∩val': 0, 'train∩test': 0, 'val∩test': 0} | hợp: 17509 | file thiếu: 0 | nhãn lệch labels.csv: 1\n"}
+,{"stream_name":"stdout","time":122.238152371,"data":"                train   val  test  total  paper\n"}
+,{"stream_name":"stdout","time":122.238157043,"data":"class                                          \n"}
+,{"stream_name":"stdout","time":122.238161808,"data":"Chinee Apple      675   225   226   1126   1125\n"}
+,{"stream_name":"stdout","time":122.238166832,"data":"Lantana           637   213   213   1063   1064\n"}
+,{"stream_name":"stdout","time":122.238172429,"data":"Parkinsonia       618   206   207   1031   1031\n"}
+,{"stream_name":"stdout","time":122.238188985,"data":"Parthenium        613   204   205   1022   1022\n"}
+,{"stream_name":"stdout","time":122.238193359,"data":"Prickly Acacia    637   212   213   1062   1062\n"}
+,{"stream_name":"stdout","time":122.238198203,"data":"Rubber Vine       605   202   202   1009   1009\n"}
+,{"stream_name":"stdout","time":122.23820174,"data":"Siam Weed         644   215   215   1074   1074\n"}
+,{"stream_name":"stdout","time":122.238205621,"data":"Snake Weed        609   203   204   1016   1016\n"}
+,{"stream_name":"stdout","time":122.23820919,"data":"Negatives        5463  1821  1822   9106   9106\n"}
+,{"stream_name":"stdout","time":122.238213013,"data":"OK: các kiểm tra bắt buộc (số ảnh, giao rỗng, hợp 17.509, file tồn tại) đều đạt.\n"}
+,{"stream_name":"stdout","time":122.238217186,"data":"\n"}
+,{"stream_name":"stdout","time":122.238220633,"data":"Mất cân bằng (cả dataset): Negatives 9106 / Rubber Vine 1009 = 9.02x | Negatives chiếm 52.0%\n"}
+,{"stream_name":"stdout","time":122.238224537,"data":"Mất cân bằng (train): 5463 / 605 = 9.03x\n"}
+,{"stream_name":"stdout","time":122.238228245,"data":"Lệch so với Table 1 của bài báo: {'Chinee Apple': 1, 'Lantana': -1}\n"}
+,{"stream_name":"stderr","time":122.239338679,"data":"/kaggle/temp/repo/submissions/2A202602928_DinhLenhTienAnh/code/dataset.py:126: UserWarning: 1 ảnh có nhãn trong fold khác labels.csv (vẫn dùng nhãn của fold theo S1):\n"}
+,{"stream_name":"stderr","time":122.239361438,"data":"                Filename  Label  split  Label_labels_csv\n"}
+,{"stream_name":"stderr","time":122.239366655,"data":"0  20170714-110407-3.jpg      0  train                 1\n"}
+,{"stream_name":"stderr","time":122.239371324,"data":"  warnings.warn(f\"{len(label_mismatch)} ảnh có nhãn trong fold khác labels.csv \"\n"}
+,{"stream_name":"stderr","time":122.239376318,"data":"\n"}
+,{"stream_name":"stderr","time":122.2393804,"data":"/kaggle/temp/repo/submissions/2A202602928_DinhLenhTienAnh/code/dataset.py:126: UserWarning: 1 ảnh có nhãn trong fold khác labels.csv (vẫn dùng nhãn của fold theo S1):\n"}
+,{"stream_name":"stderr","time":122.239385244,"data":"                Filename  Label  split  Label_labels_csv\n"}
+,{"stream_name":"stderr","time":122.239388972,"data":"0  20170714-110407-3.jpg      0  train                 1\n"}
+,{"stream_name":"stderr","time":122.239392653,"data":"  warnings.warn(f\"{len(label_mismatch)} ảnh có nhãn trong fold khác labels.csv \"\n"}
+,{"stream_name":"stdout","time":126.893616772,"data":"(kích thước, mode) của toàn bộ ảnh: {((256, 256), 'RGB'): 17509}\n"}
+,{"stream_name":"stdout","time":133.333958846,"data":"DeepWeeds train mean: [0.256 0.256 0.256] std: [0.242 0.247 0.24 ]\n"}
+,{"stream_name":"stdout","time":133.333986065,"data":"ImageNet       mean: [0.485 0.456 0.406] std: [0.229 0.224 0.225]\n"}
+,{"stream_name":"stdout","time":133.333990946,"data":"→ Dùng mean/std của trọng số tiền huấn luyện (model.data_config), vì backbone học trên phân phối đó.\n"}
+,{"stream_name":"stderr","time":141.810100042,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":141.810129602,"data":"\n"}
+,{"stream_name":"stderr","time":141.810134262,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":172.656709987,"data":"Kỳ vọng -ln(1/9) = 2.1972 (2 batch val, eval mode)\n"}
+,{"stream_name":"stdout","time":185.03416664,"data":"step   0  loss 2.1972\n"}
+,{"stream_name":"stdout","time":186.962529165,"data":"step  25  loss 0.0490\n"}
+,{"stream_name":"stdout","time":188.859875447,"data":"step  50  loss 0.0032\n"}
+,{"stream_name":"stdout","time":190.759595904,"data":"step  75  loss 0.0017\n"}
+,{"stream_name":"stdout","time":192.664417824,"data":"step 100  loss 0.0013\n"}
+,{"stream_name":"stdout","time":194.572605426,"data":"step 125  loss 0.0010\n"}
+,{"stream_name":"stdout","time":196.408161001,"data":"step 149  loss 0.0009\n"}
+,{"stream_name":"stdout","time":197.187957305,"data":"Sau 150 bước: loss train 0.0009 | accuracy eval-mode trên batch đó 100%\n"}
+,{"stream_name":"stdout","time":201.510652007,"data":"Lệch logit của cùng 1 ảnh khi chạy riêng vs trong batch 8: eval 3.10e-06 | train 2.00e+00\n"}
+,{"stream_name":"stdout","time":201.510684746,"data":"Bước 0 xong. Hình và số liệu ở /kaggle/working/figures\n"}
+,{"stream_name":"stdout","time":201.778266977,"data":"N_PARALLEL=2 | num_workers/tiến trình=2 | SMOKE=False\n"}
+,{"stream_name":"stdout","time":715.899358219,"data":"B01 seed0 resnet50 resnet50: val macro-F1 0.8025 top-1 0.8580 (best ep 11, 34 s/epoch train)\n"}
+,{"stream_name":"stdout","time":950.500713986,"data":"B02 seed0 convnext_tiny convnext_tiny: val macro-F1 0.9681 top-1 0.9743 (best ep 11, 50 s/epoch train)\n"}
+,{"stream_name":"stdout","time":1209.698193987,"data":"B03 seed0 deit_small_patch16_224 deit_small: val macro-F1 0.9492 top-1 0.9640 (best ep 11, 33 s/epoch train)\n"}
+,{"stream_name":"stdout","time":1741.804848965,"data":"B05 seed0 efficientnet_b0 efficientnet_b0: val macro-F1 0.8581 top-1 0.8920 (best ep 12, 33 s/epoch train)\n"}
+,{"stream_name":"stdout","time":1809.662205897,"data":"B04 seed0 swin_tiny_patch4_window7_224 swin_tiny: val macro-F1 0.9542 top-1 0.9674 (best ep 12, 62 s/epoch train)\n"}
+,{"stream_name":"stdout","time":2115.889594124,"data":"B06 seed0 mobilenetv3_large_100 mobilenetv3_large: val macro-F1 0.7820 top-1 0.8358 (best ep 12, 23 s/epoch train)\n"}
+,{"stream_name":"stdout","time":2149.193639078,"data":"Chọn: B02 convnext_tiny: macro-F1 val 0.9681 (cao nhất 0.9681 là B02 convnext_tiny); trong 1 backbone cách mức cao nhất ≤ 0.01, đây là cái có độ trễ batch-1 thấp nhất (5.56 ms FP32).\n"}
+,{"stream_name":"stdout","time":2618.62268847,"data":"T01 seed0 convnext_tiny A_frozen: val macro-F1 0.8534 top-1 0.8837 (best ep 7, 28 s/epoch train)\n"}
+,{"stream_name":"stdout","time":2900.259676431,"data":"T00 seed0 convnext_tiny baseline: val macro-F1 0.9681 top-1 0.9743 (best ep 11, 51 s/epoch train)\n"}
+,{"stream_name":"stdout","time":3360.88235594,"data":"T02 seed0 convnext_tiny A_scratch: val macro-F1 0.2928 top-1 0.5538 (best ep 8, 50 s/epoch train)\n"}
+,{"stream_name":"stdout","time":3640.257588313,"data":"T03 seed0 convnext_tiny B_trivialaug: val macro-F1 0.9706 top-1 0.9783 (best ep 11, 50 s/epoch train)\n"}
+,{"stream_name":"stdout","time":4111.764988335,"data":"T04 seed0 convnext_tiny B_cutmix: val macro-F1 0.9698 top-1 0.9763 (best ep 11, 51 s/epoch train)\n"}
+,{"stream_name":"stdout","time":4387.5474339,"data":"T05 seed0 convnext_tiny B_vflip: val macro-F1 0.9665 top-1 0.9737 (best ep 10, 51 s/epoch train)\n"}
+,{"stream_name":"stdout","time":4851.611348017,"data":"T06 seed0 convnext_tiny C_labelsmooth: val macro-F1 0.9694 top-1 0.9763 (best ep 11, 51 s/epoch train)\n"}
+,{"stream_name":"stdout","time":5128.331960208,"data":"T07 seed0 convnext_tiny C_focal: val macro-F1 0.9702 top-1 0.9763 (best ep 11, 51 s/epoch train)\n"}
+,{"stream_name":"stdout","time":5589.40065189,"data":"T08 seed0 convnext_tiny C_weightedce: val macro-F1 0.9700 top-1 0.9769 (best ep 12, 50 s/epoch train)\n"}
+,{"stream_name":"stdout","time":5867.118816452,"data":"T09 seed0 convnext_tiny D_balanced: val macro-F1 0.9727 top-1 0.9780 (best ep 11, 50 s/epoch train)\n"}
+,{"stream_name":"stdout","time":6440.938405557,"data":"T10 seed0 convnext_tiny F_ema: val macro-F1 0.9674 top-1 0.9740 (best ep 12, 52 s/epoch train)\n"}
+,{"stream_name":"stdout","time":6606.611911506,"data":"T11 seed0 convnext_tiny E_samelr: val macro-F1 0.9669 top-1 0.9749 (best ep 11, 51 s/epoch train)\n"}
+,{"stream_name":"stdout","time":6606.774197791,"data":"Nhiễu không tất định (T00 vs B02, cùng cấu hình + seed): |Δ| = 0.0000 → MIN_GAIN = 0.0050\n"}
+,{"stream_name":"stdout","time":6606.774229755,"data":"Trục thắng: không có\n"}
+,{"stream_name":"stdout","time":6606.774236652,"data":"Cấu hình huấn luyện cuối: T09 (sampler cân bằng lớp): macro-F1 val 0.9727 cao nhất trong các lần chạy T\n"}
+,{"stream_name":"stdout","time":6791.208743167,"data":"Kiểm tra: view 'center' trùng tiền xử lý val lúc train, lệch logit lớn nhất = 0.0\n"}
+,{"stream_name":"stdout","time":6791.208815821,"data":"View không áp dụng được: không có\n"}
+,{"stream_name":"stdout","time":6891.94504244,"data":"Phương pháp suy luận cuối: I04_288 (ảnh nguyên phóng 288), macro-F1 val 0.9789, p95 batch-1 8.60 ms + temperature scaling\n"}
+,{"stream_name":"stdout","time":7620.775269649,"data":"T00 seed2 convnext_tiny baseline: val macro-F1 0.9705 top-1 0.9766 (best ep 10, 50 s/epoch train)\n"}
+,{"stream_name":"stdout","time":7630.037277959,"data":"T00 seed1 convnext_tiny baseline: val macro-F1 0.9685 top-1 0.9757 (best ep 11, 50 s/epoch train)\n"}
+,{"stream_name":"stdout","time":8354.808287003,"data":"F01 seed1 convnext_tiny final_T09: val macro-F1 0.9693 top-1 0.9751 (best ep 12, 50 s/epoch train)\n"}
+,{"stream_name":"stdout","time":8364.901872587,"data":"F01 seed2 convnext_tiny final_T09: val macro-F1 0.9724 top-1 0.9791 (best ep 10, 50 s/epoch train)\n"}
+,{"stream_name":"stdout","time":8419.659237786,"data":"seed 0: T = 1.269, đã ghi predictions F01/T00\n"}
+,{"stream_name":"stdout","time":8454.214579257,"data":"seed 1: T = 1.303, đã ghi predictions F01/T00\n"}
+,{"stream_name":"stdout","time":8488.717410283,"data":"seed 2: T = 1.324, đã ghi predictions F01/T00\n"}
+,{"stream_name":"stdout","time":8489.64162113,"data":"### F01 (3 seed: [0, 1, 2]; 3507 ảnh)\r\n"}
+,{"stream_name":"stdout","time":8489.641653735,"data":"\r\n"}
+,{"stream_name":"stdout","time":8489.641659659,"data":"| Chỉ số | mean ± std |\r\n"}
+,{"stream_name":"stdout","time":8489.641664512,"data":"|---|---|\r\n"}
+,{"stream_name":"stdout","time":8489.641669031,"data":"| top-1 accuracy | 0.9835 ± 0.0019 |\r\n"}
+,{"stream_name":"stdout","time":8489.64167377,"data":"| macro-F1 | 0.9804 ± 0.0019 |\r\n"}
+,{"stream_name":"stdout","time":8489.641678379,"data":"| balanced accuracy | 0.9795 ± 0.0033 |\r\n"}
+,{"stream_name":"stdout","time":8489.641683222,"data":"| ECE (15 bin) | 0.0050 ± 0.0020 |\r\n"}
+,{"stream_name":"stdout","time":8489.641688039,"data":"| NLL | 0.0536 ± 0.0048 |\r\n"}
+,{"stream_name":"stdout","time":8489.641692872,"data":"\r\n"}
+,{"stream_name":"stdout","time":8489.641697289,"data":"| Lớp | Precision | Recall | F1 | Số ảnh |\r\n"}
+,{"stream_name":"stdout","time":8489.641702874,"data":"|---|---|---|---|---|\r\n"}
+,{"stream_name":"stdout","time":8489.641707452,"data":"| Chinee apple | 0.976 ± 0.006 | 0.973 ± 0.016 | 0.975 ± 0.007 | 226 |\r\n"}
+,{"stream_name":"stdout","time":8489.641712499,"data":"| Lantana | 0.983 ± 0.012 | 0.983 ± 0.005 | 0.983 ± 0.003 | 213 |\r\n"}
+,{"stream_name":"stdout","time":8489.641717512,"data":"| Parkinsonia | 0.978 ± 0.005 | 0.997 ± 0.003 | 0.987 ± 0.004 | 207 |\r\n"}
+,{"stream_name":"stdout","time":8489.64172233,"data":"| Parthenium | 0.995 ± 0.005 | 0.977 ± 0.006 | 0.986 ± 0.001 | 205 |\r\n"}
+,{"stream_name":"stdout","time":8489.641742586,"data":"| Prickly acacia | 0.957 ± 0.002 | 0.978 ± 0.010 | 0.967 ± 0.005 | 213 |\r\n"}
+,{"stream_name":"stdout","time":8489.641771791,"data":"| Rubber vine | 0.985 ± 0.005 | 0.980 ± 0.000 | 0.983 ± 0.002 | 202 |\r\n"}
+,{"stream_name":"stdout","time":8489.641779073,"data":"| Siam weed | 0.991 ± 0.000 | 0.988 ± 0.010 | 0.989 ± 0.005 | 215 |\r\n"}
+,{"stream_name":"stdout","time":8489.641783728,"data":"| Snake weed | 0.983 ± 0.003 | 0.951 ± 0.005 | 0.967 ± 0.003 | 204 |\r\n"}
+,{"stream_name":"stdout","time":8489.641787635,"data":"| Negative | 0.986 ± 0.004 | 0.988 ± 0.002 | 0.987 ± 0.002 | 1822 |\r\n"}
+,{"stream_name":"stdout","time":8489.641791421,"data":"\r\n"}
+,{"stream_name":"stdout","time":8489.641794856,"data":"Đã lưu kết quả vào /kaggle/working/eval_out/F01_*\r\n"}
+,{"stream_name":"stdout","time":8490.448290344,"data":"### F01_uncal (3 seed: [0, 1, 2]; 3507 ảnh)\r\n"}
+,{"stream_name":"stdout","time":8490.448324174,"data":"\r\n"}
+,{"stream_name":"stdout","time":8490.448327207,"data":"| Chỉ số | mean ± std |\r\n"}
+,{"stream_name":"stdout","time":8490.448329624,"data":"|---|---|\r\n"}
+,{"stream_name":"stdout","time":8490.448331878,"data":"| top-1 accuracy | 0.9835 ± 0.0019 |\r\n"}
+,{"stream_name":"stdout","time":8490.448334829,"data":"| macro-F1 | 0.9804 ± 0.0019 |\r\n"}
+,{"stream_name":"stdout","time":8490.4483519,"data":"| balanced accuracy | 0.9795 ± 0.0033 |\r\n"}
+,{"stream_name":"stdout","time":8490.448356348,"data":"| ECE (15 bin) | 0.0074 ± 0.0020 |\r\n"}
+,{"stream_name":"stdout","time":8490.448360183,"data":"| NLL | 0.0561 ± 0.0059 |\r\n"}
+,{"stream_name":"stdout","time":8490.448363919,"data":"\r\n"}
+,{"stream_name":"stdout","time":8490.448367816,"data":"| Lớp | Precision | Recall | F1 | Số ảnh |\r\n"}
+,{"stream_name":"stdout","time":8490.448371946,"data":"|---|---|---|---|---|\r\n"}
+,{"stream_name":"stdout","time":8490.448375364,"data":"| Chinee apple | 0.976 ± 0.006 | 0.973 ± 0.016 | 0.975 ± 0.007 | 226 |\r\n"}
+,{"stream_name":"stdout","time":8490.448378979,"data":"| Lantana | 0.983 ± 0.012 | 0.983 ± 0.005 | 0.983 ± 0.003 | 213 |\r\n"}
+,{"stream_name":"stdout","time":8490.448382564,"data":"| Parkinsonia | 0.978 ± 0.005 | 0.997 ± 0.003 | 0.987 ± 0.004 | 207 |\r\n"}
+,{"stream_name":"stdout","time":8490.448386017,"data":"| Parthenium | 0.995 ± 0.005 | 0.977 ± 0.006 | 0.986 ± 0.001 | 205 |\r\n"}
+,{"stream_name":"stdout","time":8490.448389518,"data":"| Prickly acacia | 0.957 ± 0.002 | 0.978 ± 0.010 | 0.967 ± 0.005 | 213 |\r\n"}
+,{"stream_name":"stdout","time":8490.448393013,"data":"| Rubber vine | 0.985 ± 0.005 | 0.980 ± 0.000 | 0.983 ± 0.002 | 202 |\r\n"}
+,{"stream_name":"stdout","time":8490.448398088,"data":"| Siam weed | 0.991 ± 0.000 | 0.988 ± 0.010 | 0.989 ± 0.005 | 215 |\r\n"}
+,{"stream_name":"stdout","time":8490.448404677,"data":"| Snake weed | 0.983 ± 0.003 | 0.951 ± 0.005 | 0.967 ± 0.003 | 204 |\r\n"}
+,{"stream_name":"stdout","time":8490.448407036,"data":"| Negative | 0.986 ± 0.004 | 0.988 ± 0.002 | 0.987 ± 0.002 | 1822 |\r\n"}
+,{"stream_name":"stdout","time":8490.498903434,"data":"\r\n"}
+,{"stream_name":"stdout","time":8490.49893861,"data":"Đã lưu kết quả vào /kaggle/working/eval_out/F01_uncal_*\r\n"}
+,{"stream_name":"stdout","time":8491.349971533,"data":"### T00 (3 seed: [0, 1, 2]; 3507 ảnh)\r\n"}
+,{"stream_name":"stdout","time":8491.35000101,"data":"\r\n"}
+,{"stream_name":"stdout","time":8491.350005672,"data":"| Chỉ số | mean ± std |\r\n"}
+,{"stream_name":"stdout","time":8491.350009694,"data":"|---|---|\r\n"}
+,{"stream_name":"stdout","time":8491.350013296,"data":"| top-1 accuracy | 0.9770 ± 0.0027 |\r\n"}
+,{"stream_name":"stdout","time":8491.350031346,"data":"| macro-F1 | 0.9715 ± 0.0036 |\r\n"}
+,{"stream_name":"stdout","time":8491.350035122,"data":"| balanced accuracy | 0.9751 ± 0.0051 |\r\n"}
+,{"stream_name":"stdout","time":8491.350038723,"data":"| ECE (15 bin) | 0.0090 ± 0.0010 |\r\n"}
+,{"stream_name":"stdout","time":8491.350042246,"data":"| NLL | 0.0757 ± 0.0028 |\r\n"}
+,{"stream_name":"stdout","time":8491.350045944,"data":"\r\n"}
+,{"stream_name":"stdout","time":8491.350049364,"data":"| Lớp | Precision | Recall | F1 | Số ảnh |\r\n"}
+,{"stream_name":"stdout","time":8491.350052912,"data":"|---|---|---|---|---|\r\n"}
+,{"stream_name":"stdout","time":8491.350056576,"data":"| Chinee apple | 0.959 ± 0.017 | 0.950 ± 0.011 | 0.954 ± 0.010 | 226 |\r\n"}
+,{"stream_name":"stdout","time":8491.350060224,"data":"| Lantana | 0.962 ± 0.021 | 0.978 ± 0.005 | 0.970 ± 0.010 | 213 |\r\n"}
+,{"stream_name":"stdout","time":8491.350063962,"data":"| Parkinsonia | 0.975 ± 0.016 | 0.989 ± 0.007 | 0.982 ± 0.005 | 207 |\r\n"}
+,{"stream_name":"stdout","time":8491.350067796,"data":"| Parthenium | 0.992 ± 0.007 | 0.971 ± 0.013 | 0.981 ± 0.003 | 205 |\r\n"}
+,{"stream_name":"stdout","time":8491.350071654,"data":"| Prickly acacia | 0.927 ± 0.017 | 0.970 ± 0.005 | 0.948 ± 0.007 | 213 |\r\n"}
+,{"stream_name":"stdout","time":8491.35007545,"data":"| Rubber vine | 0.990 ± 0.008 | 0.982 ± 0.006 | 0.986 ± 0.004 | 202 |\r\n"}
+,{"stream_name":"stdout","time":8491.350079264,"data":"| Siam weed | 0.968 ± 0.004 | 0.989 ± 0.005 | 0.979 ± 0.001 | 215 |\r\n"}
+,{"stream_name":"stdout","time":8491.350083227,"data":"| Snake weed | 0.953 ± 0.012 | 0.967 ± 0.017 | 0.960 ± 0.014 | 204 |\r\n"}
+,{"stream_name":"stdout","time":8491.350099789,"data":"| Negative | 0.988 ± 0.003 | 0.980 ± 0.004 | 0.984 ± 0.002 | 1822 |\r\n"}
+,{"stream_name":"stdout","time":8491.350103493,"data":"\r\n"}
+,{"stream_name":"stdout","time":8491.350106727,"data":"Đã lưu kết quả vào /kaggle/working/eval_out/T00_*\r\n"}
+,{"stream_name":"stdout","time":8492.514220714,"data":"## Tự chấm RUBRIC mục I (đề xuất; giảng viên xác nhận)\r\n"}
+,{"stream_name":"stdout","time":8492.514253407,"data":"\r\n"}
+,{"stream_name":"stdout","time":8492.514258087,"data":"| Mã | Tiêu chí | Điểm | Tối đa | Chi tiết |\r\n"}
+,{"stream_name":"stdout","time":8492.514262078,"data":"|---|---|---|---|---|\r\n"}
+,{"stream_name":"stdout","time":8492.514265538,"data":"| I1 | Top-1 accuracy test | 7 | 7 | 98.35% (mean 3 seed) |\r\n"}
+,{"stream_name":"stdout","time":8492.514271279,"data":"| I2 | Macro-F1 cải thiện so với mốc | 4 | 5 | final 0.9804, mốc 0.9715, Δ=+0.0090, s=0.0036 |\r\n"}
+,{"stream_name":"stdout","time":8492.514279411,"data":"| I3 | Recall hai lớp khó | 4 | 4 | Chinee Apple 97.3% (mốc 88.5%), Snake Weed 95.1% (mốc 88.8%) |\r\n"}
+,{"stream_name":"stdout","time":8492.514282303,"data":"| I4a | ECE sau TS \u003c ECE trước | 1 | 1 | trước 0.0074, sau 0.0050 |\r\n"}
+,{"stream_name":"stdout","time":8492.51428538,"data":"| I4b | Chênh macro-F1 val/test \u003c= 0.02 | 1 | 1 | val 0.9772, test 0.9804, chênh 0.0033 |\r\n"}
+,{"stream_name":"stdout","time":8492.514288123,"data":"| I5 | Cấu hình thời gian thực | 2 | 2 | p95 = 8.6 ms (ngân sách 100 ms), đo đúng cách |\r\n"}
+,{"stream_name":"stdout","time":8492.514290802,"data":"\r\n"}
+,{"stream_name":"stdout","time":8492.514293119,"data":"**Tổng các ý đã chấm: 19 / 20** (phần I tối đa 20).\r\n"}
+,{"stream_name":"stdout","time":8492.514295696,"data":"\r\n"}
+,{"stream_name":"stdout","time":8492.514303459,"data":"Ngưỡng điểm là TẠM THỜI (xem khối hằng số đầu file eval.py và RUBRIC.md mục I).\r\n"}
+,{"stream_name":"stdout","time":8494.106763392,"data":"Cặp nhầm nhiều nhất (thật → đoán, tổng 3 seed): [('Negatives → Prickly Acacia', 27), ('Snake Weed → Negatives', 22), ('Chinee Apple → Negatives', 15), ('Rubber Vine → Negatives', 12), ('Prickly Acacia → Negatives', 10)]\n"}
+,{"stream_name":"stdout","time":8496.332603984,"data":"Đã ghi /kaggle/working/results.xlsx | sheet: ['Backbones', 'Training', 'Inference', 'Final', 'PerClass', 'Latency', 'Summary']\n"}
+,{"stream_name":"stdout","time":8496.332632346,"data":"curves: 23 ảnh | thiếu: không\n"}
+,{"stream_name":"stdout","time":8496.538314138,"data":"Đã ghi /kaggle/working/report_draft.md\n"}
+,{"stream_name":"stdout","time":8496.538340431,"data":"# Báo cáo Lab Day 2 — DeepWeeds (BẢN NHÁP TỰ SINH)\n"}
+,{"stream_name":"stdout","time":8496.538345172,"data":"\n"}
+,{"stream_name":"stdout","time":8496.538348621,"data":"\u003e Sinh tự động từ lần chạy kaggle (Tesla T4, torch 2.11.0+cu128, timm 1.0.29, commit ead0f1c).\n"}
+,{"stream_name":"stdout","time":8496.538353111,"data":"\u003e Mọi số dưới đây lấy từ `results.xlsx` / `eval_out/`. Các mục **TODO** là phần phân tích bạn tự viết.\n"}
+,{"stream_name":"stdout","time":8496.538357161,"data":"\n"}
+,{"stream_name":"stdout","time":8496.538364854,"data":"## 1. Tóm tắt\n"}
+,{"stream_name":"stdout","time":8496.538367722,"data":"- Cấu hình cuối: **convnext_tiny** + công thức **T09** + suy luận **I04_288** + temperature scaling.\n"}
+,{"stream_name":"stdout","time":8496.538370346,"data":"- macro-F1 test (3 seed): **0.9804 ± 0.0019** so với mốc T00+I00 0.9715 ± 0.0036\n"}
+,{"stream_name":"stdout","time":8496.538373277,"data":"  (Δ +0.0090); top-1 test 0.9835 ± 0.0019.\n"}
+,{"stream_name":"stdout","time":8496.538375682,"data":"- Recall lớp khó (test, trung bình 3 seed): Chinee apple 97.3%, Snake weed 95.1%.\n"}
+,{"stream_name":"stdout","time":8496.538378128,"data":"- TODO: kết luận chính.\n"}
+,{"stream_name":"stdout","time":8496.53838045,"data":"\n"}
+,{"stream_name":"stdout","time":8496.538382657,"data":"## 2. Dữ liệu và thiết lập\n"}
+,{"stream_name":"stdout","time":8496.53838496,"data":"- DeepWeeds fold 0: {'train': 10501, 'val': 3501, 'test': 3507, 'total': 17509} ảnh (train/val/test/tổng); giao từng cặp rỗng; hợp 17509; không thiếu file.\n"}
+,{"stream_name":"stderr","time":8502.296789037,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":8502.296818381,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":8502.478361061,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":8502.478394201,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":8503.246364996,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":8503.549939557,"data":"[NbConvertApp] Writing 11826645 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":8506.073023366,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":8507.058060165,"data":"[NbConvertApp] Support files will be in __results___files/\n"}
+,{"stream_name":"stderr","time":8507.058087094,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":8507.05830887,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":8507.059595551,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":8507.059795828,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":8507.06066224,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":8507.06149344,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":8507.061740288,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":8507.061968056,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":8507.062153809,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":8507.062407866,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":8507.063390506,"data":"[NbConvertApp] Writing 754939 bytes to __results__.html\n"}
+]

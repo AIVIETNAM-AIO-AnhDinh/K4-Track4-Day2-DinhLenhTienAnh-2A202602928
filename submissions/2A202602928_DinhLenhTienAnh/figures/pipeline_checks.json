@@ -1,0 +1,46 @@
+{
+  "seed": 0,
+  "ln9": 2.1972245773362196,
+  "initial_loss": {
+    "resnet50": {
+      "loss_timm_init": 2.1764,
+      "loss": 2.1956
+    },
+    "resnext50_32x4d": {
+      "loss_timm_init": 2.2278,
+      "loss": 2.1984
+    },
+    "convnext_tiny": {
+      "loss_timm_init": 2.3089,
+      "loss": 2.2033
+    },
+    "deit_small_patch16_224": {
+      "loss_timm_init": 2.131,
+      "loss": 2.1912
+    },
+    "swin_tiny_patch4_window7_224": {
+      "loss_timm_init": 2.4338,
+      "loss": 2.2016
+    },
+    "efficientnet_b0": {
+      "loss_timm_init": 5.7315,
+      "loss": 2.1961
+    },
+    "mobilenetv3_large_100": {
+      "loss_timm_init": 6.0149,
+      "loss": 2.2083
+    }
+  },
+  "overfit": {
+    "backbone": "resnet50",
+    "weight_tag": "resnet50.a1_in1k",
+    "n_images": 18,
+    "steps": 150,
+    "final_loss": 0.0008652739925310016,
+    "eval_acc": 1.0
+  },
+  "bn_mode_logit_diff": {
+    "eval": 3.0994415283203125e-06,
+    "train": 2.000454902648926
+  }
+}

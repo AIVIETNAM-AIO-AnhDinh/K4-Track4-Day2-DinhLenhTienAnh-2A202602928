@@ -1,0 +1,63 @@
+{
+  "backbone": "convnext_tiny",
+  "backbone_reason": "B02 convnext_tiny: macro-F1 val 0.9681 (cao nhất 0.9681 là B02 convnext_tiny); trong 1 backbone cách mức cao nhất ≤ 0.01, đây là cái có độ trễ batch-1 thấp nhất (5.56 ms FP32).",
+  "final_training": "T09",
+  "final_training_reason": "T09 (sampler cân bằng lớp): macro-F1 val 0.9727 cao nhất trong các lần chạy T",
+  "final_inference": "I04_288",
+  "final_views": [
+    "full288"
+  ],
+  "final_agg": "prob",
+  "final_p95_ms_b1_amp": 8.597487049473784,
+  "temperature_by_seed": {
+    "0": 1.2690266371438568,
+    "1": 1.302577589495852,
+    "2": 1.3238219133105376
+  },
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "min_gain": 0.005,
+  "nondeterminism": 0.0,
+  "config": {
+    "exp_id": "T09",
+    "seed": 0,
+    "fold": 0,
+    "desc": "D_balanced",
+    "backbone": "convnext_tiny",
+    "init": "finetune",
+    "drop_rate": 0.0,
+    "head_std": 0.001,
+    "img_size": 224,
+    "aug": "basic",
+    "sampler": "balanced",
+    "mix": null,
+    "mix_alpha": 1.0,
+    "loss": "ce",
+    "label_smoothing": 0.1,
+    "focal_gamma": 2.0,
+    "class_weight_beta": null,
+    "epochs": 12,
+    "batch_size": 64,
+    "lr_backbone": 0.0001,
+    "lr_head": 0.001,
+    "weight_decay": 0.05,
+    "warmup_epochs": 1.0,
+    "ema_decay": null,
+    "amp": true,
+    "channels_last": true,
+    "num_workers": 2,
+    "preload": true,
+    "deterministic": false,
+    "images_dir": "/kaggle/temp/data/images",
+    "labels_dir": "/kaggle/temp/data/labels",
+    "out_dir": "/kaggle/working/runs",
+    "pred_dir": "/kaggle/working/predictions",
+    "curves_dir": "/kaggle/working/curves",
+    "save_test_predictions": false,
+    "resume": true,
+    "debug_subset": null
+  }
+}
